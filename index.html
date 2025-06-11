@@ -2,80 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kevin Yu – Data Analytics Portfolio</title>
-  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <title>Kevin Yu – Data Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #111;
-      color: #eee;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
+      background-color: #ffffff;
+      color: #333;
+      font-family: 'Source Sans Pro', sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
     h1 {
-      color: gold;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 0;
+      font-weight: 600;
     }
-    p {
+    h2 {
+      font-size: 1.5rem;
       text-align: center;
-      font-size: 1.2rem;
-      margin-bottom: 40px;
+      font-weight: 400;
+      color: #555;
+      margin-top: 5px;
+      margin-bottom: 20px;
     }
-    .project-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    .skills {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+    .button-bar {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .button-bar a {
+      display: inline-block;
+      background-color: #1155cc;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background-color 0.2s ease;
+    }
+    .button-bar a:hover {
+      background-color: #0d47a1;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    .section h3 {
+      font-size: 1.8rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    p, ul {
+      font-size: 1.05rem;
+      line-height: 1.6;
     }
     .project-card {
-      background-color: #222;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    a {
-      color: #00bfff;
-      text-decoration: none;
-      font-weight: bold;
+    .project-card a {
+      color: #1155cc;
+      font-weight: 600;
       font-size: 1.2rem;
+      text-decoration: none;
     }
-    footer {
-      margin-top: 60px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+    @media(max-width: 600px) {
+      body {
+        margin: 20px auto;
+        padding: 0 15px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Kevin Yu – Data Analytics Portfolio</h1>
-  <p>Data Analytics | SQL | Python | Tableau </p>
+  <h1>Kevin Yu</h1>
+  <h2>Data Analyst</h2>
 
-  <div class="project-list">
+  <div class="section" id="about">
+    <h3>About Me</h3>
+    <p>
+      I'm an aspiring data analyst with a Bachelor's in Applied Mathematics from UC Merced.
+      My technical skillset includes SQL, Python, Tableau, and data visualization. I enjoy applying analytical thinking 
+      to solve real-world business problems through actionable insights and data storytelling.
+    </p>
+  </div>
+
+  <div class="section" id="education">
+    <h3>Education</h3>
+    <p>Bachelor's of Science, Applied Mathematics</p>
+  </div>
+
+  <div class="section" id="certifications">
+    <h3>Certifications</h3>
+    <p>Google Data Analytics Professional Certificate</p>
+  </div>
+
+
+  <div class="section" id="projects">
+    <h3>Projects</h3>
 
     <div class="project-card">
-      <a href="gym_analysis(1).html">Gym Membership Churn Analysis</a>
-      <p>Analyzing member behavior and churn drivers using PostgreSQL & Tableau.</p>
+      <a href="churn_analysis(1).html">Gym Membership Churn Analysis</a>
+      <p>
+        Built a relational database using synthetic gym membership data. Used PostgreSQL to analyze member behavior, churn drivers,
+        membership length, satisfaction scores, and attendance trends. Created Tableau dashboards to visualize key churn risk factors and develop member retention strategies.
+      </p>
     </div>
 
     <div class="project-card">
       <a href="supplement_sales.html">Supplement Sales Breakdown</a>
-      <p>Sales data analysis and trend identification using Python pandas.</p>
+      <p>
+        Conducted exploratory data analysis (EDA) using Python (Pandas) on weekly supplement sales data. Identified sales patterns, seasonality, product category performance, and revenue-driving factors. Delivered actionable insights to improve inventory management and marketing strategy.
+      </p>
     </div>
 
     <div class="project-card">
       <a href="pickleball_analysis.html">Pickleball Shot Strategy</a>
-      <p>Pickleball shot breakdown and rally strategy analysis using Python.</p>
+      <p>
+        Analyzed pickleball match data using Python to study shot type distributions, rally lengths, and skill-based strategy differences. Explored how shot selection varies across DUPR skill levels to inform player training, match strategy, and competitive performance.
+      </p>
     </div>
 
   </div>
+
 
 </body>
 </html>
